@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    img {
+      margin-top: 20px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generate Your QR Code</h1>
+  <form id="qrForm">
+    <input type="text" id="urlInput" placeholder="Enter URL" required />
+    <button type="submit">Generate</button>
+  </form>
+  <img id="qrImage" src="" alt="QR Code will appear here" style="display:none;" />
+  <p id="status"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
